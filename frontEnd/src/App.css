@@ -1,0 +1,177 @@
+/* HTML CSS JSResult Skip Results Iframe */
+/* bootstrap dropdown hover menu*/
+/* body{
+  background-image:url(https://wallpapercave.com/wp/wp4069431.jpg);background-size: contain;
+} */
+section{
+  min-height: 100vh;
+  padding: 2rem 9% 2rem;
+}
+.home{
+  background-image:url(https://wallpapercave.com/wp/wp4069431.jpg);background-size: cover;
+  position: relative;
+}
+nav {
+  margin-top: 20px;
+  box-shadow: 5px 4px 5px #000;
+  background: linear-gradient(rgb(84, 84, 84),rgb(39, 39, 39));
+}
+.navbar-brand{
+    color:rgb(205, 204, 203);
+    font-size: small;
+}
+ h3{
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 5%;
+  font-family: 'Courier New', monospace;
+ }
+
+ p{
+  font-family: 'Courier New', monospace;
+ }
+
+.title{
+  background-color: rgba(237, 224, 207, 0.644);
+  color: black;
+  font-size: 6vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
+  width: 45%;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  /* position: absolute;
+  top: 35%;
+  left: 43%;
+  transform: translate(-50%,-50%);
+  color: rgb(237, 224, 207);
+  font-size: 60px;
+  font-family: Garamond, serif; */
+}
+
+.title2 {
+  position: absolute;
+  top: 36%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  color: rgb(237, 224, 207);
+  font-size: 3vw;
+  font-family: 'Courier New', monospace;
+  text-shadow: 10px 2px 5px white;
+}
+.title2:hover{
+  transform: scale(1.2);
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+
+/* img {
+  animation: mymove 7s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+  }
+} */
+
+img{
+  /* width: 600px;
+  height: 400px; */
+  object-fit: cover;
+  object-position: 0% 0%;
+  animation: mymove 5s infinite;
+}  
+
+@keyframes mymove {
+  0% {
+    object-position: 0% 0%;
+  }
+  25% {
+    object-position: 20% 0%;
+  }
+  100% {
+    object-position: 100% 100%;
+  }
+}
+
+                            /* ABOUT Section */
+.about{
+  background-image: url(https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?cs=srgb&dl=pexels-oleksandr-tiupa-192136.jpg&fm=jpg);
+  background-size: cover;
+  
+}
+
+.about-content{
+  padding: 12%;
+  color: aliceblue;
+}
+.tablecontent{
+  color: aliceblue;
+  padding-left: 20%;
+}
+.abouttable{
+  padding: 10%;
+}
+                     /* PACKAGES SECTION */
+.packages{
+  background-image: url(https://wallpapercave.com/wp/wp12548041.jpg);
+  background-size: cover;
+}
+                        /* FLIP CARD */
+.card-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-front img{
+  height: 300px;
+  width: 300px;
+}
